@@ -16,22 +16,22 @@ const plans = [
   {
     name: 'Basic',
     monthlyPrice: 3,
-    yearlyPrice: 2,
+    yearlyPrice: 30,
     features: ['More Worksheet Generation', 'Lessons'],
     cta: 'Get Started',
   },
   {
     name: 'Pro',
-    monthlyPrice: 7.5,
-    yearlyPrice: 5,
+    monthlyPrice: 5,
+    yearlyPrice: 50,
     popular: true,
     features: ['More Worksheet Generation', 'Lessons', 'Courses', 'Play'],
     cta: 'Get Started',
   },
   {
     name: 'Unlimited',
-    monthlyPrice: 15,
-    yearlyPrice: 10,
+    monthlyPrice: 10,
+    yearlyPrice: 100,
     features: ['Unlimited Worksheet Generation', 'Lessons', 'Courses', 'Play', 'Priority Support'],
     cta: 'Get Started',
   },
@@ -45,7 +45,7 @@ function formatPrice(plan) {
 
 function periodLabel(plan) {
   if (plan.monthlyPrice === 0) return 'forever'
-  return yearly.value ? '/mo, billed yearly' : '/month'
+  return yearly.value ? '/year' : '/month'
 }
 </script>
 
@@ -69,7 +69,7 @@ function periodLabel(plan) {
         />
         <span :class="['toggle-label', { active: yearly }]">
           Yearly
-          <v-chip size="x-small" color="primary" variant="tonal" class="ml-1">Save up to 33%</v-chip>
+          <v-chip size="x-small" color="primary" variant="tonal" class="ml-1">Save up to 17%</v-chip>
         </span>
       </div>
 
