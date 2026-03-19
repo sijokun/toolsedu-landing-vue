@@ -10,7 +10,7 @@ const plans = [
     name: 'Free',
     monthlyPrice: 0,
     yearlyPrice: 0,
-    features: ['Limited Worksheet Generation', '3 per day / 10 per week'],
+    features: ['Limited Worksheet Generation'],
     cta: 'Get Started',
   },
   {
@@ -113,6 +113,7 @@ function periodLabel(plan) {
             <v-btn
               :color="plan.popular ? 'primary' : undefined"
               :variant="plan.popular ? 'flat' : 'tonal'"
+              style="max-height: 42px"
               block
               rounded="lg"
               @click="$emit('goApp')"

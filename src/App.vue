@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import LandingNav from './components/LandingNav.vue'
 import HeroSection from './components/HeroSection.vue'
+import LogoSection from './components/LogoSection.vue'
 import FeaturesSection from './components/FeaturesSection.vue'
 import HowItWorks from './components/HowItWorks.vue'
 import TestimonialSection from './components/TestimonialSection.vue'
@@ -23,6 +24,7 @@ function toApp() {
     <LandingNav :app-url="appUrl" @go-app="toApp" />
     <v-main>
       <HeroSection @go-app="toApp" />
+      <LogoSection />
       <FeaturesSection />
       <HowItWorks />
       <TestimonialSection />
